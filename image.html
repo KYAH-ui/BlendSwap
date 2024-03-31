@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Between Images</title>
+    <style>
+        /* CSS for the images */
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .image-container img {
+            margin-right: 20px; /* Adjust this value to control the space between images */
+        }
+
+        /* To apply space to the last image */
+        .image-container img:last-child {
+            margin-right: 0; /* Reset margin for the last image */
+        }
+    </style>
+</head>
+<body>
+
+<div class="image-container">
+    <img src="photo.jpg" alt="Image 1">
+    <img src="book.jpg" alt="Image 2">
+    <img src="photo.jpg" alt="Image 3">
+</div>
+
+</body>
+</html>

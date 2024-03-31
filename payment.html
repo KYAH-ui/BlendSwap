@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Page</title>
+  <style>
+    /* Basic CSS for styling */
+    body {
+      font-family: Arial, sans-serif;
+    }
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    input[type="text"], input[type="number"], input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <h2>Payment Page</h2>
+  <form id="payment-form">
+    <label for="card-number">Card Number</label>
+    <input type="text" id="card-number" placeholder="Enter card number" required>
+    <label for="expiry">Expiry Date</label>
+    <input type="text" id="expiry" placeholder="MM/YY" required>
+    <label for="cvv">CVV</label>
+    <input type="number" id="cvv" placeholder="CVV" required>
+    <label for="amount">Amount ($)</label>
+    <input type="number" id="amount" placeholder="Enter amount" required>
+    <input type="submit" value="Pay Now">
+  </form>
+
+  <script>
+    // JavaScript for handling form submission
+    document.getElementById('payment-form').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the form from submitting
+
+      // Get the payment details
+      var cardNumber = document.getElementById('card-number').value;
+      var expiry = document.getElementById('expiry').value;
+      var cvv = document.getElementById('cvv').value;
+      var amount = document.getElementById('amount').value;
+
+      // You need to integrate with a payment gateway here to process the transaction
+      // For example, you can use Stripe, PayPal, etc.
+
+      // Display a confirmation message
+      alert('Payment successful! Amount: $' + amount);
+      // You may want to redirect the user to a confirmation page or perform other actions here
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thrifts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+    .image1{
+   width: 100vw;
+   background-size: cover;
+   height: 100vh;
+   position: relative;
+   background-image: url("thrifts/21.jpg");
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   /* display: flex; */
+    } 
+    .over{
+    width: 100%;
+    height: 100%;
+    float: left;
+    font-size: 87px;
+    color: rgb(181, 167, 148);
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.5);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif'
+ }
+ body{
+    margin: 0;
+    font-family: calibri;
+    background: rgb(82, 66, 44);
+ }
+ a{
+    text-decoration: none;
+ }
+ h1{
+    text-align: center;
+    font-size: 30px;
+    margin: 0px;
+    padding-top: 0x;
+    padding-bottom: 0px;
+ }
+ .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center; 
+    align-items: center;
+    margin: 30px 0;
+}
+.content {
+    width: 20%;
+    margin: 25px 20px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+     transition: transform 0.5s ease-out; 
+    background: rgb(180, 172, 163);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+    0 10px 10px (0,0,0,0.22);
+}
+.content:hover{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16),
+    0 3px 6px rgba(0,0,0,0.23);
+    transform: scale(1.2);
+
+}
+img{
+    width: 252px;
+    height: 260px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+h6{
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+    color:rgb(0, 0, 0)
+}
+button{
+    text-align: center;
+    font-size: 24px;
+    color: rgb(139, 85, 27);
+    width: 100%;
+    padding: 5px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+h4{
+  justify-content: center;
+  align-items: center;
+  height: 1vh;
+  text-align: bottom;
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    padding: 11px 22px;
+    font-size: 16px;
+    width: 35%;
+    color: #fff;
+    background-color: #b9a18f; /* Brown */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    float: left;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+    
+}
+
+.btn:hover {
+    background-color: #A0522D; /* Darker brown on hover */
+}
+
+/* Form styles */
+.form {
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #aa9a8272; /* Light gray */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="number"],
+.form textarea,
+.form select,
+.form input[type="file"] {
+    width: 40%;
+    padding: 10px 10px;
+    margin: 2px 4px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    /* box-sizing: border-box; */
+    background-color: #e4d1b472; 
+    color: black; 
+}
+
+.form input[type="submit"] {
+    background-color: #8B4513; /* Brown */
+    color: #fff;
+    padding: 4px 14px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #A0522D; /* Darker brown on hover */
+}
+
+/* Select styles */
+.select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #e4d5b7; /* Light gray */
+}
+
+/* File upload input styles */
+.form input[type="file"] {
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #8a5f1e;
+    border-radius: 4px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.form input[type="file"]:hover {
+    border-color: #8B4513; /* Brown on hover */
+}
+
+
+    </style>
+</head>
+<body>
+  <div class="image1">
+    <div class="over" style="justify-content: center; padding-left: 10%;">
+        <h4>Welcome to our THrift Shop</h4></div>
+    </div>
+<div class="gallery">
+     <div class="content">               
+        <img src="thrifts/1.jpeg">
+        <h4>Corchet top</h4>
+        <h6>₹200</h6>
+        <button><a href="b4.html">Add to Store</a></button>
+    </div>
+    <br>
+   <div class="content">
+        <img src="thrifts/2.jpeg">
+        <h4>cotton striped shirt</h4>
+        <h6>₹220</h6>
+        <button><a href="b4.html">Add to Store</a></button>
+    </div>
+
+   <div class="content">
+        <img src="thrifts/3.jpeg">
+        <h4>oversize tshirt</h4>
+        <h6>₹240</h6>
+        <button><a href="b4.html">Add to Store</a></button>
+    </div>
+
+    <div class="content">
+        <img src="thrifts/4.jpeg">
+        <h4>Formal pants</h4>
+        <h6>₹260</h6>
+        <button><a href="b4.html">Add to Store</a></button>
+    </div>
+
+      <div class="content">
+        <img src="thrifts/9.jpeg">
+        <h4>Blazer</h4>
+        <h6>₹250</h6>
+        <button><a href="b4.html">Add to Store</a></button>
+
+    </div>
+
+    <div class="content">
+        <img src="thrifts/10.jpeg">
+        <h4>crop top</h4>
+        <h6>₹230</h6>
+        <button><a href="b4.html">Add to Store</a></button>
+
+    </div>
+
+    <div class="content">
+        <img src="thrifts/11.jpeg">
+        <h4>Multi color shirt</h4>
+        <h6>₹210</h6>
+        <button><a href="b4.html">Add to Store</a></button>
+
+    </div>
+
+     <div class="content">
+        <img src="thrifts/12.jpeg">
+        <h4>Blazer</h4>
+        <h6>₹190</h6>
+        <button><a href="b4.html">Add to Store</a></button>
+
+    </div>
+
+     <div class="content">
+        <img src="thrifts/13.jpeg">
+        <h4>Denim shorts</h4>
+        <h6>₹315</h6>
+        <button><a href="b4.html">Add to Store</a></button>
+
+    </div>
+
+    <div class="content">
+        <img src="thrifts/14.jpeg">
+        <h4>crop top</h4>
+        <h6>₹320</h6>
+        <button><a href="b4.html">Add to Store</a></button>
+
+    </div>
+
+    <div class="content">
+        <img src="thrifts/15.jpeg">
+        <h4>crop top</h4>
+        <h6>₹300</h6>
+        <button><a href="b4.html">Add to Store</a></button>
+
+    </div>
+
+    <div class="content">
+        <img src="thrifts/16.jpeg">
+        <h4>pants</h4>
+        <h6>₹302</h6>
+        <button><a href="b4.html">Add to Store</a></button>
+
+      </div>
+
+    <div class="content">
+        <img src="thrifts/17.jpeg">
+        <h4>Mini dresses</h4>
+        <h6>₹250</h6>
+        <button><a href="b4.html">Add to Store</a></button>
+
+    </div>
+
+    <div class="content">
+        <img src="thrifts/18.jpeg">
+        <h4>Mini dresses</h4>
+        <h6>₹320</h6>
+        <button><a href="b4.html">Add to Store</a></button>
+
+    </div>
+
+    <div class="content">
+        <img src="thrifts/19.jpeg">
+        <h4>Corchet top</h4>
+        <h6>₹270</h6>
+        <button><a href="b4.html">Add to Store</a></button>
+
+    </div>
+
+     <div class="content">
+        <img src="thrifts/20.jpeg">
+        <h4>Corchet top</h4>
+        <h6>₹250</h6>
+        <button><a href="b4.html">Add to Store</a></button>
+
+    </div> 
+
+    <div style="background-color: white">
+  <select name="category" class="select">
+    <option value="buying">Buying</option>
+    <option value="selling">Selling</option>
+    <!-- Add more categories -->
+  </select>
+
+  <!-- Rental form -->
+  <div >
+  <form action="/rent-product" method="post" class="form" style="background-color: white; display: flex; justify-content: space-between">
+    <input type="number" name="rental_price" placeholder="Rental Price" required>
+    <input type="number" name="rental_duration" placeholder="Rental Duration (days)" required>
+    <input type="number" name="security_deposit" placeholder="Security Deposit" required>
+    <button type="submit" class="btn">Rent Product</button>
+  </form>
+</div>
+  
+  <!-- Messaging interface -->
+  <div class="message-container">
+    <!-- Messages will be displayed here -->
+  </div>
+  <form action="/send-message" method="post" class="form" style="background-color: white; display: flex; justify-content: space-between">
+    <textarea name="message" placeholder="Type your message..." required></textarea>
+    <button type="submit" class="btn">Send</button>
+  </form>
+
+  <!-- Product listing form with upload photo section -->
+<form action="/add-product" method="post" class="form" enctype="multipart/form-data" style="background-color: white; display: flex; justify-content: space-between">
+    <input type="text" name="title" placeholder="Title" required>
+    <textarea name="description" placeholder="Description" required></textarea>
+    <input type="number" name="price" placeholder="Price" required>
+    <input type="file" name="photo" accept="image/*" required> <!-- Upload photo input -->
+    <button type="submit" class="btn">Add Product</button>
+</form>
+</div>
+    <footer style="color: white">
+      <p>&copy; 2024 Thrift Website. All rights reserved.</p>
+    </footer>
+
+        <script src="script.js"></script>
+    </div>
+</div>
+   </body>
+   </html>

@@ -1,0 +1,177 @@
+*{
+    text-decoration: none;
+}
+.navbar{
+    background: rgb(218, 202, 174);
+    font-family: Calibri;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo a{
+    color: rgb(114, 70, 24);
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+li{
+    display: inline-block;
+    list-style: none;
+}
+li a{
+    padding-right: 6px;
+    color: rgb(80, 52, 18);
+    font-size: 15px;
+    font-weight: bold;
+}
+button {
+    background-color: rgb(93, 62, 32);
+    border-radius: 10px;
+    width: 90px;
+    padding: 11px;
+    margin-left: 10px;
+}
+button a{
+    color: rgb(221, 194, 168);
+    font-size: 14px;
+    font-weight: bold;
+    
+}
+container:hover {
+    box-shadow: 0 3px 6px  rgba(red, green, blue, alpha),
+    0 3px 6px ;
+    transform: translate(0px, -8px);
+}
+
+img {
+   width: 400px;
+   height: 400px;
+   text-align: center;
+   margin: 0 auto;
+   display: block;
+}
+p{
+    text-align: center;
+    color:rgb(80, 52, 18);
+    padding-top: 0 8px;
+}
+body{
+    background-color: rgb(47, 39, 32);
+}
+.image2{
+    width: 50%;
+    background-size: cover;
+    height: 100vh;
+    margin-right: 20px; 
+    position: relative;
+    background-image: url("photo.jpg");
+    float: left;
+    transition: 0.4s;
+   
+     } 
+     .image3{
+        justify-content: right;
+        margin-right: 0; 
+        width: 50%;
+        height: 100vh;
+        background-image: url("book.jpg");
+       
+        float: right;
+         } 
+        
+.btn {
+    background-color: #8B4513; /* Brown */
+    border: none;
+    color: #fff;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    text-align: bottom;
+
+}
+
+.btn:hover {
+    background-color: #A0522D; /* Darker brown on hover */
+}
+
+/* Form styles */
+.form {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f5f5f5; /* Light gray */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="number"],
+.form textarea,
+.form select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form input[type="submit"] {
+    background-color: #8B4513; /* Brown */
+    color: #fff;
+    padding: 14px 24px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #A0522D; /* Darker brown on hover */
+}
+
+/* Select styles */
+.select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #f5f5f5; /* Light gray */
+}
+.container{
+    margin-top: 15px;
+    /* margin-bottom: 15px; */
+    display: flex;
+    justify-content: space-between;
+}
+.bt{
+    width: 100%;
+    color: rgb(218, 195, 161);
+    font-size: 25px;
+    font-weight: bold;
+}
+.container img {
+    padding-left: 20px; /* Adjust this value to control the space between images */
+}
+.container img:last-child {
+   padding: 0; /* Reset margin for the last image */
+}
+.tt{
+    width: 35%;
+    
+}
